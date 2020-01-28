@@ -1,0 +1,54 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+        x:Class="AvaloniaBugs.MainWindow"
+        Title="AvaloniaBugs">
+  <Grid RowDefinitions="Auto, Auto, *, Auto"
+        ColumnDefinitions="*, Auto">
+    <TextBlock Grid.Row="0" Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Text="Title"
+               HorizontalAlignment="Center"
+               FontSize="24"
+               FontWeight="Bold"/>
+    <TextBlock TextWrapping="Wrap"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               FontSize="14"
+               Text="I am some text"
+               Margin="0,0,0,0"/>
+    <DataGrid Grid.Column="0"
+              Grid.Row="2"
+              Grid.ColumnSpan="1">
+      <DataGrid.Columns>
+        <DataGridTemplateColumn Header="Path"
+                                IsReadOnly="True"
+                                Width="*"
+                                CanUserReorder="False">
+          <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+              <TextBlock Text="Hello" TextWrapping="Wrap" MaxHeight="100"/>
+            </DataTemplate>
+          </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+      </DataGrid.Columns>
+    </DataGrid>
+    <StackPanel Grid.Column="1"
+                Grid.Row="2"
+                Orientation="Vertical"
+                Margin="5">
+      <Button Content="Button One"
+              Margin="0,5,0,5"/>
+    </StackPanel>
+    <Button Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Content="Save"
+            Margin="5"
+            Width="100"
+            HorizontalAlignment="Center"/>
+  </Grid>
+</Window>
