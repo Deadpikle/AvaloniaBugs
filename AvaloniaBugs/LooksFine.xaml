@@ -1,0 +1,79 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+             x:Class="DataGridPreview.LooksFine">
+
+  <Grid ColumnDefinitions="*, Auto"
+        RowDefinitions="*, Auto">
+    <DataGrid Grid.Column="0"
+              Grid.Row="0"
+              VerticalAlignment="Stretch"
+              VerticalGridLinesBrush="Gray"
+              HorizontalGridLinesBrush="Gray">
+      <DataGrid.Columns>
+        <DataGridTemplateColumn Header="Path"
+                                IsReadOnly="True"
+                                Width="*"
+                                CanUserReorder="False">
+          <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding Path}" TextWrapping="Wrap" MaxHeight="100"/>
+            </DataTemplate>
+          </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+        <DataGridTemplateColumn Header="Directory?" CanUserReorder="False" Width="Auto">
+          <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+              <CheckBox IsChecked="{Binding IsDirectory}"
+                        IsEnabled="False" HorizontalAlignment="Center"/>
+            </DataTemplate>
+          </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+        <DataGridTemplateColumn Header="Col 2?" CanUserReorder="False" Width="Auto">
+          <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+              <CheckBox HorizontalAlignment="Center"/>
+            </DataTemplate>
+          </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+        <DataGridTemplateColumn Header="I am a long, long long text header" CanUserReorder="False" CanUserResize="False" Width="Auto">
+          <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+              <CheckBox HorizontalAlignment="Center"/>
+            </DataTemplate>
+          </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+        <DataGridTemplateColumn Header="" CanUserResize="False" Width="155">
+          <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+              <Button Content="Exclude Files/Folders"
+                      Command="{Binding $parent[UserControl].DataContext.EditDirectoryExclusions}"
+                      CommandParameter="{Binding}"
+                      IsVisible="{Binding CanEditFolderExclusions}"/>
+            </DataTemplate>
+          </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+      </DataGrid.Columns>
+    </DataGrid>
+    <StackPanel Orientation="Vertical"
+                Grid.Column="1"
+                Grid.Row="0"
+                Spacing="5"
+                Margin="2">
+      <Button Content="Button 2" />
+      <Button Content="Button 2" />
+      <Button Content="Button 2"/>
+      <Button Content="Button 32"/>
+    </StackPanel>
+    <StackPanel Orientation="Vertical"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+      <Button Content="Go"
+              Width="100"
+              Margin="4"/>
+    </StackPanel>
+  </Grid>
+</UserControl>
