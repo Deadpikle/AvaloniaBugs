@@ -1,0 +1,30 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+        x:Class="CheckboxRadioButton.MainWindow"
+        Title="CheckboxRadioButton">
+  <Window.Styles>
+    <!-- This doesn't work :( -->
+    <Style Selector="CheckBox:checked /template/ Path#checkMark">
+      <Setter Property="Fill" Value="Green"/>
+      <!--<Setter Property="IsVisible" Value="False"/>-->
+    </Style>
+    <Style Selector="RadioButton:checked /template/ Ellipse#checkMark">
+      <Setter Property="Fill" Value="Green"/>
+      <!--<Setter Property="IsVisible" Value="False"/>-->
+    </Style>
+  </Window.Styles>
+  <Window.Resources>
+    <!-- This works! -->
+    <SolidColorBrush x:Key="HighlightBrush" Color="Green"/>
+  </Window.Resources>
+  <StackPanel Spacing="8"
+              Margin="10">
+    <CheckBox Content="Hello Checkbox!"
+              IsChecked="True"/>
+    <RadioButton Content="Hello RadioButton!"
+                 IsChecked="True"/>
+  </StackPanel>
+</Window>
