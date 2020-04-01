@@ -38,7 +38,7 @@
             </DataTemplate>
           </DataGridTemplateColumn.CellTemplate>
         </DataGridTemplateColumn>
-        <DataGridTemplateColumn Header="I am a long, long long text header" CanUserReorder="False" CanUserResize="False" Width="Auto">
+        <DataGridTemplateColumn Header="Nope" CanUserReorder="False" CanUserResize="False" Width="Auto">
           <DataGridTemplateColumn.CellTemplate>
             <DataTemplate>
               <CheckBox HorizontalAlignment="Center"/>

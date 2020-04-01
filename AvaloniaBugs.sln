@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragDropDataGrid", "DragDro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckboxRadioButton", "CheckboxRadioButton\CheckboxRadioButton.csproj", "{3E8A5F06-954F-4C7B-BD9C-2ACC53648A7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItalicTextWrapping", "ItalicTextWrapping\ItalicTextWrapping.csproj", "{43880574-E413-47DA-B0B4-90419E660818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItalicTextWrapping", "ItalicTextWrapping\ItalicTextWrapping.csproj", "{43880574-E413-47DA-B0B4-90419E660818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogStartupLocation", "DialogStartupLocation\DialogStartupLocation.csproj", "{8A03E8B8-1AC7-4785-9F2C-38236C2AE03F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{43880574-E413-47DA-B0B4-90419E660818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43880574-E413-47DA-B0B4-90419E660818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43880574-E413-47DA-B0B4-90419E660818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A03E8B8-1AC7-4785-9F2C-38236C2AE03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A03E8B8-1AC7-4785-9F2C-38236C2AE03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A03E8B8-1AC7-4785-9F2C-38236C2AE03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A03E8B8-1AC7-4785-9F2C-38236C2AE03F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
