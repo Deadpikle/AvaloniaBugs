@@ -1,0 +1,26 @@
+﻿<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ContextMenuNullRef.App">
+    <Application.Styles>
+        <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml"/>
+        <StyleInclude Source="avares://Avalonia.Themes.Default/Accents/BaseLight.xaml"/>
+        <Style Selector="TextBox">
+          <Setter Property="ContextMenu">
+            <Setter.Value>
+              <Template>
+                <ContextMenu>
+                  <ContextMenu.Items>
+                    <MenuItem Header="Cut">
+                    </MenuItem>
+                    <MenuItem Header="Copy">
+                    </MenuItem>
+                    <MenuItem Header="Paste">
+                    </MenuItem>
+                  </ContextMenu.Items>
+                </ContextMenu>
+              </Template>
+            </Setter.Value>
+          </Setter>
+        </Style>
+    </Application.Styles>
+</Application>
