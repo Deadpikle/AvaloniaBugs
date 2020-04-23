@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItalicTextWrapping", "Itali
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogStartupLocation", "DialogStartupLocation\DialogStartupLocation.csproj", "{8A03E8B8-1AC7-4785-9F2C-38236C2AE03F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextMenuNullRef", "ContextMenuNullRef\ContextMenuNullRef.csproj", "{D9EFA76F-DD68-46E1-A8FE-568933A65122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextMenuNullRef", "ContextMenuNullRef\ContextMenuNullRef.csproj", "{D9EFA76F-DD68-46E1-A8FE-568933A65122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticObjectBinding", "StaticObjectBinding\StaticObjectBinding.csproj", "{7BBDAB83-6EE8-419D-84D4-311513A35032}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D9EFA76F-DD68-46E1-A8FE-568933A65122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9EFA76F-DD68-46E1-A8FE-568933A65122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9EFA76F-DD68-46E1-A8FE-568933A65122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBDAB83-6EE8-419D-84D4-311513A35032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBDAB83-6EE8-419D-84D4-311513A35032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBDAB83-6EE8-419D-84D4-311513A35032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBDAB83-6EE8-419D-84D4-311513A35032}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
