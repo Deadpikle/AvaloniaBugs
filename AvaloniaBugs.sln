@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticObjectBinding", "Stat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignerException", "DesignerException\DesignerException.csproj", "{E1C41BBF-EDF6-4EBB-9415-DA93C4ABF412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControlRenderBreak", "TabControlRenderBreak\TabControlRenderBreak.csproj", "{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControlSelection", "TabControlRenderBreak\TabControlSelection.csproj", "{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
