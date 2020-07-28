@@ -13,8 +13,8 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.9.999-cibuild0006280-beta" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.999-cibuild0006280-beta" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.9.999-cibuild0006280-beta" />
+    <PackageReference Include="Avalonia" Version="0.9.999-cibuild0008974-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.999-cibuild0008974-beta" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.9.999-cibuild0008974-beta" />
   </ItemGroup>
 </Project>
