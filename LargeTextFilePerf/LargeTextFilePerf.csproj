@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Licenses.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Licenses.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.9.999-cibuild0009703-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.999-cibuild0009703-beta" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.9.999-cibuild0009703-beta" />
+  </ItemGroup>
+</Project>

@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticObjectBinding", "Stat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignerException", "DesignerException\DesignerException.csproj", "{E1C41BBF-EDF6-4EBB-9415-DA93C4ABF412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControlSelection", "TabControlRenderBreak\TabControlSelection.csproj", "{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabControlSelection", "TabControlRenderBreak\TabControlSelection.csproj", "{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargeTextFilePerf", "LargeTextFilePerf\LargeTextFilePerf.csproj", "{199DD118-F67F-450E-B328-93EB3409B757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67A5CEE2-14DA-4B38-ABF0-A6CA961BD52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199DD118-F67F-450E-B328-93EB3409B757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199DD118-F67F-450E-B328-93EB3409B757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199DD118-F67F-450E-B328-93EB3409B757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199DD118-F67F-450E-B328-93EB3409B757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
