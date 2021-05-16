@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignerException", "Design
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargeTextFilePerf", "LargeTextFilePerf\LargeTextFilePerf.csproj", "{199DD118-F67F-450E-B328-93EB3409B757}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridBinding", "DataGridBinding\DataGridBinding.csproj", "{429D5B44-64B1-4F37-8CCD-6C7428836591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{199DD118-F67F-450E-B328-93EB3409B757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{199DD118-F67F-450E-B328-93EB3409B757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{199DD118-F67F-450E-B328-93EB3409B757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429D5B44-64B1-4F37-8CCD-6C7428836591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429D5B44-64B1-4F37-8CCD-6C7428836591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429D5B44-64B1-4F37-8CCD-6C7428836591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429D5B44-64B1-4F37-8CCD-6C7428836591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

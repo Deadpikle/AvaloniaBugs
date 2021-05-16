@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DataGridBinding.MainWindow"
+        Title="DataGridBinding">
+  <Grid RowDefinitions="Auto, Auto, *">
+    <Label Content="{Binding SelectedIndexMessage}"
+           Grid.Row="0"/>
+    <StackPanel Spacing="4"
+                Grid.Row="1">
+      <Label Content="Selected item is:"/>
+      <Label Content="{Binding SelectedItem}"/>
+    </StackPanel>
+    <DataGrid Items="{Binding Items}"
+              SelectedIndex="{Binding SelectedIndex}"
+              SelectedItem="{Binding SelectedItem}"
+              Grid.Row="2"
+              Background="Transparent">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Item Col 1"
+                            Binding="{Binding}" />
+        <DataGridTextColumn Header="Item Col 2"
+                            Binding="{Binding}" />
+        <DataGridTextColumn Header="Item Col 3"
+                            Binding="{Binding}" />
+        <DataGridTextColumn Header="Item Col 4"
+                            Binding="{Binding}" />
+        <DataGridTextColumn Header="Item Col 5"
+                            Binding="{Binding}" />
+      </DataGrid.Columns>
+    </DataGrid>
+  </Grid>
+</Window>
