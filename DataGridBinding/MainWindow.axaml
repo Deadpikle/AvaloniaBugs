@@ -9,27 +9,29 @@
     <Label Content="{Binding SelectedIndexMessage}"
            Grid.Row="0"/>
     <StackPanel Spacing="4"
-                Grid.Row="1">
+                Grid.Row="1"
+                Orientation="Horizontal">
       <Label Content="Selected item is:"/>
       <Label Content="{Binding SelectedItem}"/>
     </StackPanel>
-    <DataGrid Items="{Binding Items}"
-              SelectedIndex="{Binding SelectedIndex}"
-              SelectedItem="{Binding SelectedItem}"
-              Grid.Row="2"
-              Background="Transparent">
-      <DataGrid.Columns>
-        <DataGridTextColumn Header="Item Col 1"
-                            Binding="{Binding}" />
-        <DataGridTextColumn Header="Item Col 2"
-                            Binding="{Binding}" />
-        <DataGridTextColumn Header="Item Col 3"
-                            Binding="{Binding}" />
-        <DataGridTextColumn Header="Item Col 4"
-                            Binding="{Binding}" />
-        <DataGridTextColumn Header="Item Col 5"
-                            Binding="{Binding}" />
-      </DataGrid.Columns>
-    </DataGrid>
+    <StackPanel Grid.Row="2">
+      <Grid ColumnDefinitions="Auto, *"
+            ShowGridLines="True"
+            RowDefinitions="Auto, Auto">
+        <Label Content="Name:"
+               Grid.Row="0"
+               Grid.Column="0"/>
+        <TextBox Grid.Row="0"
+                 Grid.Column="1"
+                 Text="Moo"/>
+        <Label Content="Boo:"
+               Grid.Row="1"
+               Grid.Column="0"/>
+        <NumericUpDown Grid.Row="1"
+                       Grid.Column="1"
+                       Minimum="0"
+      Maximum="1"/>
+      </Grid>
+    </StackPanel>
   </Grid>
 </Window>

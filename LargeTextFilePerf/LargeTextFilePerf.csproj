@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Licenses.txt" />
@@ -12,8 +12,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.9.999-cibuild0009703-beta" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.999-cibuild0009703-beta" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.9.999-cibuild0009703-beta" />
+    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0018838-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.999-cibuild0018838-beta" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.999-cibuild0018838-beta" />
   </ItemGroup>
 </Project>

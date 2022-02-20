@@ -13,6 +13,8 @@ namespace DataGridBinding
 
         private List<string> _items;
 
+        private DateTimeOffset _selectedDate;
+
         public MainViewModel()
         {
             _selectedIndex = -1;
@@ -23,6 +25,13 @@ namespace DataGridBinding
                 "two",
                 "three"
             };
+            _selectedDate = DateTime.Now;
+        }
+
+        public DateTimeOffset SelectedDate
+        {
+            get => _selectedDate;
+            set { _selectedDate = value; NotifyPropertyChanged(); NotifyPropertyChanged(nameof(SelectedIndexMessage)); }
         }
 
         public int SelectedIndex
@@ -40,7 +49,7 @@ namespace DataGridBinding
 
         public string SelectedIndexMessage
         {
-            get => _selectedIndex == -1 ? "Nothing selected" : "You've selected " + _selectedIndex;
+            get =>"Date is " + _selectedDate.ToString();
         }
 
         public List<string> Items

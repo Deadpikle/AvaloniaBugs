@@ -5,13 +5,22 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="LargeTextFilePerf.MainWindow"
         Title="LargeTextFilePerf"
-        Width="400"
-        Height="400">
-  <ScrollViewer Grid.Row="1">
-      <TextBlock Name="LicensesText"
-                 TextWrapping="Wrap"
-                 MaxWidth="350"
-             Margin="0,2,155,2">
-      </TextBlock>
+        Width="300"
+        Height="300">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+    <Grid RowDefinitions="*, Auto" ColumnDefinitions="*">
+      <StackPanel Grid.Row="0"
+                  Grid.Column="0"
+                  Margin="10">
+        <!--<TextBlock TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>
+        <TextBlock TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>
+        <TextBlock TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>-->
+        <TextBlock Name="LicensesText"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Stretch"
+                   MaxWidth="350"
+                   Text="Hello there"/>
+      </StackPanel>
+    </Grid>
   </ScrollViewer>
 </Window>

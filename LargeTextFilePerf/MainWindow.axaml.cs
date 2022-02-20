@@ -1,6 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using System;
 using System.IO;
 
 namespace LargeTextFilePerf
@@ -15,16 +16,27 @@ namespace LargeTextFilePerf
 #if DEBUG
             this.AttachDevTools();
 #endif
-            using (TextReader tr = new StreamReader(@"Licenses.txt"))
+
+            try
             {
-                string myText = tr.ReadToEnd();
-                _licenseText.Text = myText;
+                {
+                    using (TextReader tr = new StreamReader(@"Licenses.txt"))
+                    {
+                        string myText = tr.ReadToEnd();
+                        _licenseText.Text = myText;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                // ommitted
             }
         }
 
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+
             _licenseText = this.Find<TextBlock>("LicensesText");
         }
     }
